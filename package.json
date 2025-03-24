@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "type": "module",
- "bin": {
+  "bin": {
     "brain-games": "bin/brain-games.js",
     "brain-even": "bin/brain-even.js",
     "brain-calc": "bin/brain-calc.js",
@@ -27,5 +27,8 @@
   "bugs": {
     "url": "https://github.com/onnyutt/qa-auto-engineer-javascript-project-44/issues"
   },
-  "homepage": "https://github.com/onnyutt/qa-auto-engineer-javascript-project-44#readme"
+  "homepage": "https://github.com/onnyutt/qa-auto-engineer-javascript-project-44#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
 }

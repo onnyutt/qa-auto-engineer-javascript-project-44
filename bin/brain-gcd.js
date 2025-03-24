@@ -2,13 +2,13 @@
 
 import runGame from '../src/index.js';
 
-const gcd = (a, b) => (b === 0 ? a : gcd(b, a % b));
+export const isGCDGame = (a, b) => (b === 0 ? a : isGCDGame(b, a % b));
 
-const generateRound = () => {
+export const generateRound = () => {
     const num1 = Math.floor(Math.random() * 100) + 1;
     const num2 = Math.floor(Math.random() * 100) + 1;
     const question = `${num1} ${num2}`;
-    const correctAnswer = gcd(num1, num2).toString();
+    const correctAnswer = isGCDGame(num1, num2).toString();
     return [question, correctAnswer];
 };
 

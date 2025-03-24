@@ -3,7 +3,7 @@ import runGame from '../src/index.js';
 
 const operators = ['+', '-', '*'];
 
-const calculate = (num1, num2, operator) => {
+export const isCalcGame = (num1, num2, operator) => {
     switch (operator) {
         case '+': return num1 + num2;
         case '-': return num1 - num2;
@@ -18,7 +18,7 @@ const generateRound = () => {
     const operator = operators[Math.floor(Math.random() * operators.length)];
 
     const question = `${num1} ${operator} ${num2}`;
-    const correctAnswer = calculate(num1, num2, operator).toString();
+    const correctAnswer = isCalcGame(num1, num2, operator).toString();
     return [question, correctAnswer];
 };
 
